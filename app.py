@@ -47,12 +47,12 @@ def calculate():
 	chemistry_credit=3
 	aptitude_credit=3
 
-#practical
+	#practical
 	python_lab_credit=2
 	physics_chem_lab_credit=2
 	english_lab_credit=1
 
-#Gradescores of Each
+	#Gradescores of Each
 
 	score_english_theory=points[english_theory]*english_credit
 	score_matrices=points[maths]*maths_credit
