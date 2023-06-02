@@ -1,19 +1,12 @@
 import customtkinter as ct
-#import tkinter as t
-
-
-
 
 ct.set_appearance_mode("black")
 ct.set_default_color_theme("dark-blue")
 
 
-
-
 root = ct.CTk()
 
 root.title("GPA ")
-#t.pack()
 root.geometry("500x500")
 
 _english_theory = ct.StringVar()
@@ -83,37 +76,11 @@ def calculate():
 	
     
 	
-    
-
-
-  
-	
-	
-#print(totalcredits)
-#print("\n\n\tGPA Score =  ","%.4f"%GPA)
-
-
-
-'''
-_english_theory = t.StringVar()
-_maths=t.StringVar()
-_physics_theory=t.StringVar()
-_chemistry_theory=t.StringVar()
-_python_theory=t.StringVar()
-_aptitude=t.StringVar()
-
-_physics_chem_lab=t.StringVar()
-_python_lab=t.StringVar()
-_english_lab=t.StringVar()
-
-
-
-'''
 
 
 
 
-options=['O','A+',"A",'B',"B+","C","D"]
+options=['O','A+',"A",'B',"B+","C"]
 
 _english_theory=ct.CTkComboBox(root,values=options)
 
@@ -127,23 +94,9 @@ _aptitude=ct.CTkComboBox(root,values=options)
 
 _physics_chem_lab=ct.CTkComboBox(root,values=options)
 _python_lab=ct.CTkComboBox(root,values=options)
-#_english_lab.set("Select Grade")
 _english_lab=ct.CTkComboBox(root,values=options)
 
 submit=ct.CTkButton(root, text="Submit" , command = calculate)
-
-
-'''
-def click(event) :
-	eng.delete(0,t.END)
-	
-
-eng.insert(0, "")
-eng.bind("<Button-1>",click)
-'''
-
-
-#print(dir(t))
 
 
 theorylabel= ct.CTkLabel(root,text="THEORY" , fg_color="#536E8A" , corner_radius=5 , font=("monospace" , 10))
@@ -194,19 +147,6 @@ _aptitude.place(relx=0.72 , rely=0.4 , anchor="center")
 _physics_chem_lab.place(relx=0.72 , rely=0.60 , anchor="center")
 _python_lab.place(relx=0.72 , rely=0.65 , anchor="center")
 _english_lab.place(relx=0.72 , rely=0.70 , anchor="center")
-
-
-
-#eng.pack()
-
-# mat.pack()
-# phy.pack()
-# che.pack()
-# pyt.pack()
-# apt.pack()
-# chel.pack()
-# pyl.pack()
-# engl.pack()
 
 
 
